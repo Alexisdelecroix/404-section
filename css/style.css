@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.container-404 {
+  width: 95%;
+  background-image: url(../img/abstract-background.jpg);
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+section .container-404 .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  margin-left: 10%;
+}
+
+section .container-404 .container .container-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+
+section .container-404 .container .container-text h1 {
+  font-size: 70px;
+}
+
+
+section .container-404 .container .container-text p {
+  color: #525252;
+  font-size: 22px;
+}
+
+
+section .container-404 .container .container-text #error {
+  color: #4438CA;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section .container-404 .container button {
+  padding: 20px 35px;
+  color: white;
+  background-color: #4438CA;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+@media screen and (max-width:1000px) {
+  section .container-404 .container {
+    margin-left: 5%;
+  }
+
+  section .container-404 .container .container-text h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  section .container-404 .container button {
+    width: 95%;
+    margin: auto;
+  }
+
+  section .container-404 .container .container-text h1 {
+    font-size: 35px;
+  }
+
+  section .container-404 .container .container-text p {
+    color: #525252;
+    font-size: 20px;
+  }
+}
